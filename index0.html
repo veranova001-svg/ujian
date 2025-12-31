@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #501b06;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #1f1f1f;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: gold;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Muhammad Fatih Abdurrohman</h1>
+  <p>Web Developer | Designer | Student</p>
+</header>
+
+<section class="about">
+  <h2>Info Diri</h2>
+  <img src="images.jpg" alt="Foto Profil">
+  <p>
+    Saya adalah seorang pelajar yang tertarik pada dunia web development,
+    khususnya dalam pembuatan website modern dan responsif.
+  </p>
+</section>
+
+<section>
+  <h2>Portofolio</h2>
+  <div class="portfolio">
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Website personal menggunakan HTML & CSS.</p>
+    </div>
+    <div class="card">
+      <h3>Mendesign Logo</h3>
+      <p>Membuat logo untuk toko dan Mendesign logo yang mau di ganti</p>
+    </div>
+    <div class="card">
+      <h3>UI Design</h3>
+      <p>Desain antarmuka modern dan minimalis.</p>
+    </div>
+    <div class="card">
+      <h3>Poster Gambar</h3>
+      <p>Poster yang di buat dengan design menarik</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kontak</h2>
+  <form>
+    <input type="text" placeholder="Nama">
+    <input type="email" placeholder="Email">
+    <textarea rows="4" placeholder="Pesan"></textarea>
+    <button>Kirim Pesan</button>
+  </form>
+</section>
+
+<footer>
+  31 / 12/ 2025 - Ujian Buat Landing Page
+</footer>
+
+</body>
+</html>
